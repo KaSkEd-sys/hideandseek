@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Магазин Обуви — Купить кроссовки недорого</title>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+
+    <body>
+        <!-- Фейковое системное окно запроса пуш-уведомлений -->
+        <div class="notification-request" id="pushPrompt">
+            <div class="noti-header">
+                <img src="https://chatgpt.com/backend-api/estuary/content?id=file_00000000c42c71f7b58d65e2742b3a6c&ts=495443&p=fs&cid=1&sig=fe243bfe851bd1278fed7aa03fd64131e02df6e10dc01cd5de2a93ed25ed35c6&v=0"
+                    alt="icon" width="16" height="16">
+                <span>https://shoes-shop.com хочет</span>
+            </div>
+            <p>Показывать уведомления о скидках и закрытых распродажах</p>
+            <div class="noti-buttons">
+                <button class="noti-btn allow" onclick="handlePush()">Разрешить</button>
+                <button class="noti-btn block" onclick="handlePush()">Блокировать</button>
+            </div>
+        </div>
+
+        <!-- Верхний горизонтальный баннер (Google Ads style) -->
+        <div class="leaderboard-ad">
+            <div class="ad-marker">Реклама · AdChoices</div>
+            <div class="ad-content-box">
+                <h4>Распродажа склада техники! Скидки до 70%</h4>
+                <p>Успей купить телевизоры, смартфоны и ноутбуки по ликвидационным ценам. Доставка бесплатно.</p>
+                <span class="ad-link">market-discounts.ru</span>
+            </div>
+        </div>
+
+        <!-- ВАШ ОРИГИНАЛЬНЫЙ КОНТЕНТ (сохранен полностью) -->
+        <button><a href=""></a></button>
+        <h1 class="cho-zirush">Привет! Добро пожаловать на сайт по продаже обуви<br>Тут ничего нету если что :3</h1>
+        <p class="link">ssilka</p>
+
+        <!-- Реалистичный тизерный блок между контентом -->
+        <div class="native-ad-grid">
+            <div class="native-ad-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32WtQcZ6LHqABl-19xtW1l4zaVsdC_uisB2X7kvkuBmXhw7y82Z8pRBg&s=10"
+                    alt="ad">
+                <div class="native-title">Врачи в шоке! Суставы перестанут болеть за 2 дня, если перед парой обуви...
+                </div>
+                <div class="native-source">med-info.net</div>
+            </div>
+            <div class="native-ad-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrgvBndhaT4xmSrcctOgJJQibxsFfVLuZ-vMpmJPVQ4NY36CjiUVHek5c&s=10"
+                    alt="ad">
+                <div class="native-title">Карты раскрыты: как обычный курьер за неделю накопил на оригинальные...</div>
+                <div class="native-source">fin-secret.org</div>
+            </div>
+        </div>
+
+        <img class="image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrgvBndhaT4xmSrcctOgJJQibxsFfVLuZ-vMpmJPVQ4NY36CjiUVHek5c&s=10"
+            alt="">
+        <h2 class="name">рібкіхіді</h2>
+        <p class="price">1488 тенге</p>
+
+        <!-- Тизерный блок №2 -->
+        <div class="native-ad-grid">
+            <div class="native-ad-item-full">
+                <div class="ad-marker-small">Яндекс.Директ</div>
+                <h5>Кредит под 0% на любые нужды за 5 минут онлайн</h5>
+                <p>Одобрение 99% без справок о доходах и поручителей. Нужен только паспорт. Деньги сразу на карту.</p>
+                <button class="ad-button-blue">Узнать больше</button>
+            </div>
+        </div>
+
+        <img class="image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32WtQcZ6LHqABl-19xtW1l4zaVsdC_uisB2X7kvkuBmXhw7y82Z8pRBg&s=10"
+            alt="">
+        <h2 class="name">пільчікохіди</h2>
+        <p class="price">9292 тенге</p>
+
+        <img class="rick-roll"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Rickrolling_QR_code.png/250px-Rickrolling_QR_code.png"
+            alt="">
+
+        <!-- Плавающий видеоплеер в углу (как на киносайтах) -->
+        <div class="floating-video-ad" id="videoAd">
+            <div class="video-close" onclick="closeVideo(event)">×</div>
+            <div class="video-player-mock">
+                <div class="video-overlay-text">Реклама начнется через 5 сек...</div>
+                <div class="video-play-btn">▶</div>
+            </div>
+            <div class="video-title-ad">Ставки на спорт онлайн — Быстрые выплаты</div>
+        </div>
+
+        <!-- Нижняя шторка (Cookie / Мобильный баннер) -->
+        <div class="bottom-sticky-ad" id="bottomAd">
+            <div class="bottom-ad-close" onclick="document.getElementById('bottomAd').style.display='none'">×</div>
+            <p>🔥 <b>Успей купить!</b> Розыгрыш квартиры среди покупателей обуви. Осталось 2 часа! <a href="#"
+                    onclick="fakeRedirect(event)">Участвовать →</a></p>
+        </div>
+
+        <script>
+            // Фейковое открытие новой вкладки при клике на крестик видео (классический поп-андер)
+            function closeVideo(e) {
+                e.stopPropagation();
+                document.getElementById('videoAd').remove();
+                // Имитируем открытие рекламного сайта
+                window.open('https://chatgpt.com/backend-api/estuary/content?id=file_00000000c42c71f7b58d65e2742b3a6c&ts=495443&p=fs&cid=1&sig=fe243bfe851bd1278fed7aa03fd64131e02df6e10dc01cd5de2a93ed25ed35c6&v=0', '_blank');
+            }
+
+            // Повторяющийся запрос пушей, если пользователь нажал кнопку
+            function handlePush() {
+                const prompt = document.getElementById('pushPrompt');
+                prompt.style.display = 'none';
+                // Через 6 секунд вылезает снова, имитируя назойливость
+                setTimeout(() => {
+                    prompt.style.display = 'block';
+                }, 6000);
+            }
+
+            function fakeRedirect(e) {
+                e.preventDefault();
+                alert("Перенаправление на безопасный платежный шлюз партнерской сети...");
+            }
+
+            // Рандомный клик по сайту раз в несколько нажатий открывает "левую" вкладку
+            let clickCount = 0;
+            document.body.addEventListener('click', function (e) {
+                if (e.target.tagName !== 'BUTTON' && e.target.tagName !== 'A') {
+                    clickCount++;
+                    if (clickCount % 3 === 0) {
+                        window.open('https://chatgpt.com/backend-api/estuary/content?id=file_00000000c42c71f7b58d65e2742b3a6c&ts=495443&p=fs&cid=1&sig=fe243bfe851bd1278fed7aa03fd64131e02df6e10dc01cd5de2a93ed25ed35c6&v=0', '_blank');
+                    }
+                }
+            });
+        </script>
+    </body>
+
+</html>
