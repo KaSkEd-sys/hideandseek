@@ -1,0 +1,288 @@
+.cho-zirush {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+.link {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+}
+
+.rick-roll {
+    width: 150px;
+    height: 150px;
+}
+
+/* ==========================================================================
+   РЕАЛИСТИЧНАЯ РЕКЛАМА ДЛЯ ТРОЛЛИНГА (Вставьте в style.css)
+   ========================================================================== */
+
+/* Контейнер верхнего баннера */
+.leaderboard-ad {
+    width: 100%;
+    max-width: 728px;
+    margin: 15px auto;
+    background: #fcfcfc;
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.ad-marker {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 4px;
+    text-align: right;
+}
+
+.ad-content-box h4 {
+    margin: 0 0 5px 0;
+    color: #1a0dab;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ad-content-box h4:hover {
+    text-decoration: underline;
+}
+
+.ad-content-box p {
+    margin: 0 0 5px 0;
+    color: #545454;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.ad-link {
+    font-size: 12px;
+    color: #006621;
+}
+
+/* Сетка нативных тизеров (желтушные новости) */
+.native-ad-grid {
+    display: flex;
+    gap: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.native-ad-item {
+    width: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+.native-ad-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.native-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.3;
+}
+
+.native-source {
+    font-size: 11px;
+    color: #bbb;
+    margin-top: 5px;
+}
+
+/* Одиночный баннер Яндекс.Директ */
+.native-ad-item-full {
+    width: 100%;
+    background: #f5f7f9;
+    border-left: 4px solid #ffcc00;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.ad-marker-small {
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.native-ad-item-full h5 {
+    margin: 0 0 5px 0;
+    color: #000;
+    font-size: 15px;
+}
+
+.native-ad-item-full p {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    color: #444;
+}
+
+.ad-button-blue {
+    background: #005bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Всплывающий фейковый пуш-запрос браузера в левом верхнем углу */
+.notification-request {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 310px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 10000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    border: 1px solid #dadce0;
+}
+
+.noti-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 8px;
+}
+
+.notification-request p {
+    font-size: 12px;
+    color: #5f6368;
+    margin: 0 0 15px 0;
+}
+
+.noti-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.noti-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.allow {
+    background: #1a73e8;
+    color: white;
+    border: none;
+}
+
+.block {
+    background: white;
+    color: #1a73e8;
+    border: 1px solid #dadce0;
+}
+
+/* Видеоплеер в углу */
+.floating-video-ad {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 260px;
+    background: #111;
+    border: 1px solid #333;
+    padding: 5px;
+    z-index: 9999;
+    font-family: sans-serif;
+    color: white;
+}
+
+.video-close {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 22px;
+    height: 22px;
+    background: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.video-player-mock {
+    width: 100%;
+    height: 140px;
+    background: #222;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-overlay-text {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 10px;
+    padding: 2px 5px;
+}
+
+.video-play-btn {
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.video-title-ad {
+    font-size: 11px;
+    padding: 5px 2px 0 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Нижняя прилипающая плашка */
+.bottom-sticky-ad {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff3cd;
+    border-top: 2px solid #ffeeba;
+    color: #856404;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 9998;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.bottom-ad-close {
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
